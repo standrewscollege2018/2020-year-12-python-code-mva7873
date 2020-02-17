@@ -1,6 +1,6 @@
 def GSTfind(amount):
-    amount/15 = gst
-    print("$",gst)
-print("enter amount")
-amount= int(input())
 GSTfind(amount)
+    gst = amount*0.15
+    return gst
+amount= int(input("enter amount"))
+
