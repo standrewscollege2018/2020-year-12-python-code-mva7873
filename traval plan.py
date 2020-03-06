@@ -41,23 +41,24 @@ while take_off_slection == True:
 (print(destination[2][0],end = ' '), print(destination[2][1],end = ' '), print(destination[2][2]))
 (print(destination[3][0],end = ' '), print(destination[3][1],end = ' '), print(destination[3][2]))
 
-  destination_slection=True
-  while destination_slection == True:
+destination_slection=True
+
+while destination_slection == True:
     take_off_choice = int(input("enter the corsponding number of destination that you wish to go to: "))
     if take_off_choice == (1):
-        Traval_costs + (326)
+        Traval_costs = Traval_costs + 326
         print("continue with your selection")
         destination_slection=False
     elif take_off_choice == (2):
-            Traval_costs + 50
+            Traval_costs = Traval_costs +  378
             print("continue with your selection")
             destination_slection=False
     elif take_off_choice == (3):
-                Traval_costs + 75
+                Traval_costs = Traval_costs + 1436
                 print("continue with your selection")
                 destination_slection=False
     elif take_off_choice == (4):
-        Traval_costs + 75
+        Traval_costs + 2376
         print("continue with your selection")
         destination_slection=False                
     else:
