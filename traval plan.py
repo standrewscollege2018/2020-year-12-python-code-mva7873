@@ -2,11 +2,11 @@
 
 #lists of citys costs and flights
 
-accommodation  = [["Sydney","$", 120], ["Tonga","$", 40], ["Shanghai","$", 60], ["London","$", 80]]
-take_off = [["1  Auckland","$", 0], ["2  Wellington",'$', 50], ["3  Christchurch","$", 75]]
-destination = [["1  Sydney","$", 326], ["2  Tonga","$", 378], ["3  Shanghai","$", 1436], ["4  London","$", 2376]]
 
-#total cost for flights and accommodation
+take_off = [["1  Auckland","$",0], ["2  Wellington",'$',50], ["3  Christchurch","$",75]]
+destination = [["1  Sydney","$",326,"$",120], ["2  Tonga","$",378,"$",40], ["3  Shanghai","$",1436,"$",60], ["4  London","$",2376,"$",80]]
+
+#total cost for flights and accomodation
 acom_costs = (0)
 Traval_costs = (0)
 #start of while loops
@@ -19,17 +19,17 @@ print("Please note that depending on where you depart from there may be addition
 (print(take_off[2][0],end = ' '), print(take_off[2][1],end = ' '), print(take_off[2][2]))
 
 while take_off_slection == True:
-    take_off_choice = int(input("enter the corsponding number of the city you wish to leave from: "))
+    take_off_choice = int(input("enter the corresponding number of the city you wish to leave from: "))
     if take_off_choice == (1):
-        Traval_costs + 0
+        Traval_costs = Traval_costs + 0
         print("continue with your selection")
         take_off_slection=False
     elif take_off_choice == (2):
-            Traval_costs + 50
+            Traval_costs = Traval_costs + 50
             print("continue with your selection")
             take_off_slection=False
     elif take_off_choice == (3):
-                Traval_costs + 75
+                Traval_costs = Traval_costs+ 75
                 print("continue with your selection")
                 take_off_slection=False
     else:
@@ -63,5 +63,14 @@ while destination_slection == True:
         destination_slection=False                
     else:
                 print("invald input")            
-        
-    print("$", Traval_costs)
+ 
+
+#start of the accmoadation
+print ("The costs of accomodation are on a day by day bases")
+
+(print(destination[0][0],end = ' '), print(destination[0][3],end = ' '), print(destination[0][4]),"per day")
+(print(destination[1][0],end = ' '), print(destination[1][3],end = ' '), print(destination[1][4]),"per day")
+(print(destination[2][0],end = ' '), print(destination[2][3],end = ' '), print(destination[2][4]),"per day")
+(print(destination[3][0],end = ' '), print(destination[3][3],end = ' '), print(destination[3][4]),"per day")
+
+ 
